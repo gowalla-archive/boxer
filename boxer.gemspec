@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = Boxer::VERSION
   s.authors     = ['Brad Fults']
   s.email       = ['bfults@gmail.com']
-  s.homepage    = 'http://github.com/h3h/boxer'
+  s.homepage    = 'http://github.com/gowalla/boxer'
   s.license     = 'MIT'
   s.summary     = %q{Easy custom-defined templates for JSON generation of objects in Ruby.}
   s.description = %q{A composable templating system for generating JSON via Ruby hashes, with different possible views on each object and runtime data passing.}

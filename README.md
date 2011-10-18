@@ -84,13 +84,13 @@ within a box&mdash;it's just Ruby:
 
 ## More Features
 
-See [the wiki](/h3h/boxer/wiki) for more features of Boxer, including:
+See [the wiki](/gowalla/boxer/wiki) for more features of Boxer, including:
 
- * [Extra Arguments](/h3h/boxer/wiki/Extra-Arguments)
- * [Preconditions](/h3h/boxer/wiki/Preconditions)
- * [Helper Methods in Boxes](/h3h/boxer/wiki/Helper-Methods-in-Boxes)
- * [Box Includes](/h3h/boxer/wiki/Box-Includes)
- * [Multiple Inheritance](/h3h/boxer/wiki/Multiple-Inheritance)
+ * [Extra Arguments](/gowalla/boxer/wiki/Extra-Arguments)
+ * [Preconditions](/gowalla/boxer/wiki/Preconditions)
+ * [Helper Methods in Boxes](/gowalla/boxer/wiki/Helper-Methods-in-Boxes)
+ * [Box Includes](/gowalla/boxer/wiki/Box-Includes)
+ * [Multiple Inheritance](/gowalla/boxer/wiki/Multiple-Inheritance)
 
 ## Installation
 
@@ -98,7 +98,7 @@ Install the [boxer gem](http://rubygems.org/gems/boxer).
 
 ## Original Author
 
- * [Brad Fults](http://h3h.net/), Gowalla Incorporated
+ * [Brad Fults](http://h3h.net/), [Gowalla Incorporated](http://gowalla.com/)
 
 ## Inspiration
 
