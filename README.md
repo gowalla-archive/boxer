@@ -84,16 +84,13 @@ within a box&mdash;it's just Ruby:
 
 ## More Features
 
-See [the wiki][wi] for more features of Boxer, including [extra arguments][ea],
-[preconditions][pc], [helper methods in boxes][hm], [box includes][bi]
-and [multiple inheritance][mi].
+See [the wiki](/h3h/boxer/wiki) for more features of Boxer, including:
 
- [wi]: /h3h/boxer/wiki
- [ea]: /h3h/boxer/wiki/Extra-Arguments
- [pc]: /h3h/boxer/wiki/Preconditions
- [hm]: /h3h/boxer/wiki/Helper-Methods-in-Boxes
- [bi]: /h3h/boxer/wiki/Box-Includes
- [mi]: /h3h/boxer/wiki/Multiple-Inheritance
+ * [Extra Arguments](/h3h/boxer/wiki/Extra-Arguments)
+ * [Preconditions](/h3h/boxer/wiki/Preconditions)
+ * [Helper Methods in Boxes](/h3h/boxer/wiki/Helper-Methods-in-Boxes)
+ * [Box Includes](/h3h/boxer/wiki/Box-Includes)
+ * [Multiple Inheritance](/h3h/boxer/wiki/Multiple-Inheritance)
 
 ## Original Author
 
