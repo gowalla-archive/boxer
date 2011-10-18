@@ -92,6 +92,10 @@ See [the wiki](/h3h/boxer/wiki) for more features of Boxer, including:
  * [Box Includes](/h3h/boxer/wiki/Box-Includes)
  * [Multiple Inheritance](/h3h/boxer/wiki/Multiple-Inheritance)
 
+## Installation
+
+Install the [boxer gem](http://rubygems.org/gems/boxer).
+
 ## Original Author
 
  * [Brad Fults](http://h3h.net/), Gowalla Incorporated
