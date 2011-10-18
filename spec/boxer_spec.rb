@@ -1,6 +1,14 @@
 require 'spec_helper'
 require 'boxer'
 
+module MyTestModule
+  def my_test_method; 42 end
+end
+
+module MySecondTestModule
+  def my_second_test_method; 43 end
+end
+
 describe Boxer do
 
   describe ".box" do
@@ -59,6 +67,14 @@ describe Boxer do
     end
   end
 
+  describe ".configure" do
+    it "sets config.box_includes via its supplied block" do
+      Boxer.config.box_includes = []
+      Boxer.configure {|config| config.box_includes = [MyTestModule] }
+      Boxer.config.box_includes.should include(MyTestModule)
+    end
+  end
+
   describe ".ship" do
     it "accepts arguments and passes them to a box for shipping" do
       Boxer.box(:bar) do |box, x, y, z|
@@ -78,6 +94,15 @@ describe Boxer do
       Boxer.ship(:bar, 1, 2, :banana => true).should eq(
         {:working => true, :stuff => [1, 2, {:banana => true}]}
       )
+    end
+
+    it "includes modules from config.box_includes in shipping boxes" do
+      Boxer.config.box_includes = [MyTestModule, MySecondTestModule]
+      Boxer.box(:bar) do |box|
+        box.view(:base) { {:a => my_test_method, :b => my_second_test_method} }
+      end
+
+      Boxer.ship(:bar).should eq({:a => 42, :b => 43})
     end
   end
 

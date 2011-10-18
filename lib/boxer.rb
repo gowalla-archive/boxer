@@ -38,7 +38,7 @@ class Boxer
   end
 
   def self.configure
-    yield @config
+    yield config
   end
 
   def self.ship(name, *args)
