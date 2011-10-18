@@ -9,13 +9,8 @@ Gem::Specification.new do |s|
   s.email       = ['bfults@gmail.com']
   s.homepage    = 'http://github.com/h3h/boxer'
   s.license     = 'MIT'
-  s.summary     = %q{
-    Easy custom-defined templates for JSON generation of objects in Ruby.
-  }
-  s.description = %q{
-    A composable templating system for generating JSON via Ruby hashes, with
-    different possible views on each object and runtime data passing.
-  }
+  s.summary     = %q{Easy custom-defined templates for JSON generation of objects in Ruby.}
+  s.description = %q{A composable templating system for generating JSON via Ruby hashes, withdifferent possible views on each object and runtime data passing.}
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
