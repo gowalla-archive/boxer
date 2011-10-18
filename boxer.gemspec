@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.homepage    = 'http://github.com/h3h/boxer'
   s.license     = 'MIT'
   s.summary     = %q{
-    Easy custom-defined templates for JSON generation of objects.
+    Easy custom-defined templates for JSON generation of objects in Ruby.
   }
   s.description = %q{
     A composable templating system for generating JSON via Ruby hashes, with

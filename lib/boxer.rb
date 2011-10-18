@@ -53,7 +53,9 @@ class Boxer
   end
 
   def ship(*args)
+    args = args.dup
     if args.last.is_a?(Hash)
+      args[-1] = args.last.dup
       view = args.last.delete(:view)
       args.slice!(-1) if args.last.empty?
     end

@@ -104,6 +104,17 @@ describe Boxer do
 
       Boxer.ship(:bar).should eq({:a => 42, :b => 43})
     end
+
+    it "does not mutate passed in arguments" do
+      Boxer.box(:bar) do |box, num, opts|
+        box.view(:base) { {} }
+      end
+
+      hash = {:view => :base}.freeze
+      orig_hash = hash.dup
+      Boxer.ship(:bar, 1, hash)
+      hash.should eq(orig_hash)
+    end
   end
 
   describe "#precondition" do
