@@ -19,7 +19,6 @@ class Boxer
     @fallback = []
     @views = {}
     @views_chain = {}
-    @view_defaults = options[:views] || {}
     @options = options
   end
 
