@@ -80,7 +80,7 @@ within a box&mdash;it's just Ruby:
       }
     end
 
- 1. `Hash#to_json` requires the [`json` library](http://rubygems.org/gems/json)
+ 1. `Hash#to_json` requires a [json library](http://rubygems.org/gems/json)
 
 ## More Features
 
