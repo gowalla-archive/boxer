@@ -3,6 +3,12 @@
 Boxer is a template engine for creating nested and multi-view JSON objects
 from Ruby hashes.
 
+<section style="text-align:center">
+  <a href="http://engineering.gowalla.com/2011/10/24/boxer/">
+    <img src="http://engineering.gowalla.com/images/boxer.png" alt="Logo" />
+  </a>
+</section>
+
 ## The Problem
 
 Say you have a couple ActiveRecord models in your Rails app and you want to
@@ -102,5 +108,5 @@ Install the [boxer gem](http://rubygems.org/gems/boxer).
 
 ## Inspiration
 
-Boxer was inspired by [rabl](https://github.com/nesquena/rabl),
-by Nathan Esquenazi.
+Boxer was inspired by [RABL](https://github.com/nesquena/rabl),
+by [Nathan Esquenazi](https://github.com/nesquena).
