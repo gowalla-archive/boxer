@@ -44,6 +44,25 @@ class Boxer
     fail "Unknown box: #{name.inspect}" unless @boxes.has_key?(name)
     @boxes[name].ship(*args)
   end
+  
+  # Including support for collection objects
+  def self.ship_all(name, *args)
+    fail "Unknown box: #{name.inspect}" unless @boxes.has_key?(name)
+    if args.last.is_a?(Hash)
+      root_key = args.last.delete(:root_key)
+      args.slice!(-1) if args.last.empty?
+    end
+    if args.last.is_a?(Hash)
+      view = args.last.delete(:view)
+      args.slice!(-1) if args.last.empty?
+    end
+    view ||= :base
+    args.each do |arg|
+      @boxes[name].ship(arg, :view => view)
+    end
+    result_set = {}
+    result_set[root_key] = @boxes
+  end
 
   ## instance methods
 
